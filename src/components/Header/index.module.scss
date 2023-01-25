@@ -1,0 +1,25 @@
+.header {
+  background-color: #CCCCCC;
+  color: #fff;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

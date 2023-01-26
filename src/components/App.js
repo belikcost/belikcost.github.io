@@ -37,25 +37,27 @@ const App = () => {
     return (
         <div className={styles.container}>
             <Header/>
-            <Routes>
-                <Route
-                    exact path="/"
-                    element={<Navigate to="/catalog"/>}
-                />
-                <Route
-                    path="/catalog"
-                    element={<Catalog products={PRODUCTS} onAddToCart={onAddToCart}/>}
-                />
-                <Route
-                    path="/cart"
-                    element={<Cart
-                        products={cartProducts}
-                        clearCart={clearCart}
-                        onChangeProductCount={onChangeProductCount}
-                        onDeleteProduct={onDeleteProduct}
-                    />}
-                />
-            </Routes>
+            <div className={styles.content}>
+                <Routes>
+                    <Route
+                        exact path="/"
+                        element={<Navigate to="/catalog"/>}
+                    />
+                    <Route
+                        path="/catalog"
+                        element={<Catalog products={PRODUCTS} onAddToCart={onAddToCart}/>}
+                    />
+                    <Route
+                        path="/cart"
+                        element={<Cart
+                            products={cartProducts}
+                            clearCart={clearCart}
+                            onChangeProductCount={onChangeProductCount}
+                            onDeleteProduct={onDeleteProduct}
+                        />}
+                    />
+                </Routes>
+            </div>
         </div>
     );
 };

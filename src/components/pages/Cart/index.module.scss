@@ -12,18 +12,17 @@
 }
 
 .header {
-  border-bottom: 1px solid #CACDD8;
   display: grid;
   grid-template-columns: 94% 6%;
   align-items: center;
   padding-bottom: 14px;
-  margin-bottom: 25px;
 }
 
 .products {
   display: flex;
   flex-direction: column;
   gap: 32px 0;
+  margin-top: 25px;
 }
 
 .buttons {
@@ -86,4 +85,32 @@
 
 .totalAmountValue {
   font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 64px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: none;
+  }
+
+  .products {
+    margin-top: 18px;
+    gap: 18px 0;
+  }
+
+  .buttons {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    button {
+      font-size: 12px;
+    }
+  }
 }

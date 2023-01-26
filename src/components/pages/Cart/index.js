@@ -33,6 +33,7 @@ const Cart = ({ products, clearCart, onChangeProductCount, onDeleteProduct }) =>
                     <span>Товар</span>
                     <span>К-во</span>
                 </header>
+                <div className={styles.divider}/>
                 <div className={styles.products}>
                     {products.map((product, i) => (
                         <React.Fragment key={product.id}>

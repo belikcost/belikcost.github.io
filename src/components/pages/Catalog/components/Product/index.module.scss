@@ -1,0 +1,37 @@
+.image {
+  width: 100%;
+}
+
+.name {
+  margin: 10px 0 8px;
+}
+
+p {
+  margin: 0;
+}
+
+.price {
+  margin: 12px 0;
+}
+
+.description {
+  color: #888888;
+  font-size: 14px;
+}
+
+.container {
+  position: relative;
+
+  &:hover .hoverActions {
+    display: flex;
+  }
+}
+
+.hoverActions {
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  gap: 0 10px;
+}

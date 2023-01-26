@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  gap: 31px;
+}
+
+.actions  {
+  display: flex;
+  gap: 0 30px;
+
+  button {
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 0;
+  }
+}
+
+.description {
+  color: #888888;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+  gap: 15px 0;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.image {
+  width: 173px;
+  height: 173px;
+  object-fit: cover;
+}
+
+.input {
+  margin-left: auto;
+}

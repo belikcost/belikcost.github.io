@@ -1,0 +1,38 @@
+.container, .input {
+  background: #F7F6F6;
+}
+
+.container {
+  padding: 8px 14px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.input {
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.downIcon {
+  transform: rotate(180deg);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
